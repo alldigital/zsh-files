@@ -2,6 +2,8 @@
 # Env Variables
 #
 
+export ANDROID_HOME=/opt/android-sdk
+
 #
 # OS Specific Env Variables
 #
