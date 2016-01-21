@@ -3,7 +3,7 @@
 setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
-extended_history
+setopt extended_history
 # enable '!' history expansion
 setopt bang_hist
 # when exiting, append history entries to $HISTFILE, rather than replacing the old file; this is the default
