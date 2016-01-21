@@ -6,14 +6,13 @@
 # OS Specific Env Variables
 #
 
-if [[ $CURRENT_OS == 'OS X' ]]; then
-    # OS X Env Variables
-elif [[ $CURRENT_OS == 'Linux' ]]; then
-    # Linux Env Variables
+# Ensure languages are set
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
-    if [[ $USER == 'ed' ]]; then
-#        export ECLIPSE_HOME=/opt/eclipse/
-    fi
-elif [[ $CURRENT_OS == 'Cygwin' ]]; then
-    # Cygwin Env Variables
-fi
+
+# Ensure editor is set
+export EDITOR=vim
+export VISUAL=vim
+
