@@ -1,30 +1,14 @@
-SOURCE=${0%/*}
+#!/usr/bin/zsh
 
-# Lib
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
 
-source $SOURCE/lib/completion.zsh
-source $SOURCE/lib/git.zsh
-source $SOURCE/lib/grep.zsh
-source $SOURCE/lib/history.zsh
-source $SOURCE/lib/key-bindings.zsh
-source $SOURCE/lib/misc.zsh
-source $SOURCE/lib/spectrum.zsh
-source $SOURCE/lib/termsupport.zsh
-source $SOURCE/lib/theme-and-appearance.zsh
+dirs=(aliases colors env options path themes)
 
-# Aliases
-source $SOURCE/aliases/aliases.zsh
-
-# Custom things
-
-# Env settings
-source $SOURCE/env/env.zsh
-
-# Various functions
-
-# Paths
-source $SOURCE/path/paths.zsh
-
-# Colors
-source $SOURCE/colors/config.zsh
-source $SOURCE/colors/mc.zsh
+for dir in $dirs
+do
+	for file in `ls $SCRIPTPATH/$dir/*.zsh`
+	do
+		source  $file
+	done
+done
