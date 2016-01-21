@@ -64,7 +64,7 @@ alias -s hs=$EDITOR
 alias -s c=$EDITOR
 
 # Show full history
-history='fc -l 1'
+alias history='fc -l 1'
 
 #
 # User Specific Aliases
