@@ -66,8 +66,13 @@ alias -s c=$EDITOR
 # Show full history
 alias history='fc -l 1'
 
-# Tmux list clients
+# Tmux aliases
+alias ta='tmux attach -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
 alias tc='tmux list-clients'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
 
 #
 # User Specific Aliases
