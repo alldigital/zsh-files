@@ -66,6 +66,9 @@ alias -s c=$EDITOR
 # Show full history
 alias history='fc -l 1'
 
+# Tmux list clients
+alias tc='tmux list-clients'
+
 #
 # User Specific Aliases
 #
