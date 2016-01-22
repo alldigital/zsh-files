@@ -45,7 +45,7 @@ zsh_zplug() {
     # Other plugins of interest
 #    zplug "junegunn/fzf-bin",  as:command, from:gh-r, file:"fzf", frozen:1
 #    zplug "peco/peco",         as:command, from:gh-r, file:"fzf", at:v0.3.5
-    zplug "junegunn/fzf-bin",  as:command, from:gh-r, file:"fzf"
+#    zplug "junegunn/fzf-bin",  as:command, from:gh-r, file:"fzf"
 
     # Support oh-my-zsh plugins and the like
     zplug "plugins/git",   from:oh-my-zsh
@@ -122,6 +122,6 @@ fi
 
 # Powerline 
 powerline-daemon -q
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+. /usr/share/zsh/site-contrib/powerline.zsh
 
 
