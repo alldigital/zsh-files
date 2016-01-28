@@ -122,6 +122,10 @@ fi
 
 # Powerline 
 powerline-daemon -q
-. /usr/share/zsh/site-contrib/powerline.zsh
+if [[ -r /usr/share/zsh/site-contrib/powerline.zsh ]]; then
+	source /usr/share/zsh/site-contrib/powerline.zsh
+fi
 
-
+if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+	source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+fi
