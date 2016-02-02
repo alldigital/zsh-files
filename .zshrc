@@ -120,6 +120,12 @@ if zsh_startup; then
     #bindkey -M menuselect '^k' accept-and-infer-next-history
 fi
 
+# fzf command history search if present
+
+if [[ -r /etc/profile.d/fzf.zsh ]]; then
+	. /etc/profile.d/fzf.zsh
+fi
+
 # Powerline 
 powerline-daemon -q
 if [[ -r /usr/share/zsh/site-contrib/powerline.zsh ]]; then
