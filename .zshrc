@@ -133,5 +133,8 @@ if [[ -r /usr/share/zsh/site-contrib/powerline.zsh ]]; then
 fi
 
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-	source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+#	source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+	autoload -U promptinit
+	promptinit
+	export PROMPT='[%*]%(?..%B{%v}%b)%n%(2v.%B@%b.@)%m:%B%~%b%(!.#.>) '
 fi
