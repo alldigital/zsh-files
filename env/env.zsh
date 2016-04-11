@@ -19,5 +19,5 @@ export VISUAL=nvim
 
 # Set browser
 
-export BROWSER=firefox
+export BROWSER=google-chrome-stable
 
