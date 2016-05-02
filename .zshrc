@@ -38,7 +38,7 @@ zsh_zplug() {
     zplug "alldigital/zsh-files"
 
     # Other b4b4r07 plugins
-    zplug "b4b4r07/http_code", as:command, of:bin
+    zplug "b4b4r07/http_code", as:command, use:bin
     zplug "b4b4r07/zsh-vimode-visual"
 
     # Other plugins of interest
