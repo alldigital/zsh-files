@@ -47,7 +47,7 @@ zsh_zplug() {
 #    zplug "junegunn/fzf-bin",  as:command, from:gh-r, file:"fzf"
 
     # Support oh-my-zsh plugins and the like
-    zplug "plugins/git",   from:oh-my-zsh
+#    zplug "plugins/git",   from:oh-my-zsh
 
     # Substring search
     zplug "zsh-users/zsh-history-substring-search"
