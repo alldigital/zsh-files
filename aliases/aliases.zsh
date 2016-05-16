@@ -79,3 +79,4 @@ alias tkss='tmux kill-session -t'
 #
 
 alias bdate='date +%Y%m%d_%H%M%S'
+alias pack='TMPDIR=/data/tmp packer --noconfirm --noedit'
