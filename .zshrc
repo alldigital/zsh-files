@@ -8,6 +8,8 @@ export LC_ALL=en_US.UTF-8
 export EDITOR=vim
 export VISUAL=vim
 
+eval "$(fasd --init auto)"
+
 zsh_zplug() {
     [[ -d ~/.zplug ]] || {
         git clone https://github.com/b4b4r07/zplug ~/.zplug
