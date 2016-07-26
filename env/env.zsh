@@ -2,6 +2,10 @@
 # Env Variables
 #
 
+# Config dir
+export XDG_CONFIG_HOME=$HOME/.config
+
+# Android SDK
 export ANDROID_HOME=/opt/android-sdk
 
 #
@@ -20,4 +24,5 @@ export VISUAL=nvim
 # Set browser
 
 export BROWSER=google-chrome-stable
+
 
