@@ -41,7 +41,6 @@ zsh_zplug() {
 
     # Other b4b4r07 plugins
     zplug "b4b4r07/http_code", as:command, use:bin
-    zplug "b4b4r07/zsh-vimode-visual"
 
     # Other plugins of interest
 #    zplug "junegunn/fzf-bin",  as:command, from:gh-r, file:"fzf", frozen:1
@@ -53,7 +52,6 @@ zsh_zplug() {
 
     # Substring search
     zplug "zsh-users/zsh-history-substring-search"
- 
     # Completions
     zplug "zsh-users/zsh-completions"
 
@@ -127,7 +125,7 @@ if [[ -r /etc/profile.d/fzf.zsh ]]; then
 	. /etc/profile.d/fzf.zsh
 fi
 
-# Powerline 
+# Powerline
 powerline-daemon -q
 if [[ -r /usr/share/zsh/site-contrib/powerline.zsh ]]; then
 	source /usr/share/zsh/site-contrib/powerline.zsh
