@@ -64,7 +64,7 @@ alias -s hs=$EDITOR
 alias -s c=$EDITOR
 
 # Show full history
-alias history='fc -l 1'
+alias history='fc -l -E 1'
 
 # Tmux aliases
 alias ta='tmux attach -t'
