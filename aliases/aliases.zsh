@@ -86,3 +86,6 @@ alias v='f -e vim' # quick opening files with vim
 alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
+# EMACS aliases
+alias emg='emacsclient -nc -a ""'
+alias emt='emacsclient -t -a ""'
