@@ -11,11 +11,10 @@ export VISUAL=vim
 eval "$(fasd --init auto)"
 
 zsh_zplug() {
-#    [[ -d ~/.zplug ]] || {
-#        git clone https://github.com/b4b4r07/zplug ~/.zplug
-#        source ~/.zplug/zplug
-#        zplug update --self
-#    }
+    [[ -d ~/.zplug ]] || {
+        curl -sL zplug.sh/installer | zsh
+        source ~/.zplug/init.zsh
+    }
 
 #	zplug plugin management
 	source ~/.zplug/init.zsh
