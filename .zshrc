@@ -11,23 +11,14 @@ export VISUAL=vim
 eval "$(fasd --init auto)"
 
 zsh_zplug() {
-    [[ -d ~/.zplug ]] || {
-        git clone https://github.com/b4b4r07/zplug ~/.zplug
-        source ~/.zplug/zplug
-        zplug update --self
-    }
+#    [[ -d ~/.zplug ]] || {
+#        git clone https://github.com/b4b4r07/zplug ~/.zplug
+#        source ~/.zplug/zplug
+#        zplug update --self
+#    }
 
 #	zplug plugin management
-	source ~/.zplug/zplug
-
-    has_plugin() {
-        (( $+functions[zplug] )) || return 1
-        zplug check "${1:?too few arguments}"
-        return $status
-    }
-
-    # Let zplug manage inself
-    zplug "b4b4r07/zplug"
+	source ~/.zplug/init.zsh
 
     # Local loading
     #    zplug "~/.modules", from:local, nice:1, of:"*.sh"
