@@ -5,6 +5,9 @@
 # Config dir
 export XDG_CONFIG_HOME=$HOME/.config
 
+# Android SDK
+export ANDROID_HOME=/opt/android-sdk
+
 #
 # OS Specific Env Variables
 #
