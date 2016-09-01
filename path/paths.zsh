@@ -15,4 +15,4 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # export PATH=$PATH:$HOME/dev/android-studio/bin
 # export PATH=$PATH:$HOME/eclipse
 
-# export PATH=$PATH:$HOME/.rvm/bin
+export PATH=$PATH:$HOME/.rvm/bin
