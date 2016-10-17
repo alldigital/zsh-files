@@ -15,11 +15,9 @@ export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Ensure editor is set
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=vim
+export VISUAL=vim
 
 # Set browser
 
 export BROWSER=google-chrome-stable
-
-
