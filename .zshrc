@@ -32,6 +32,10 @@ zsh_zplug() {
     # Other b4b4r07 plugins
     zplug "b4b4r07/http_code", as:command, use:bin
 
+    # node.js nvm
+    zplug "lukechilds/zsh-nvm"
+    zplug "lukechilds/zsh-better-npm-completion", nice:10
+
     # Other plugins of interest
 #    zplug "junegunn/fzf-bin",  as:command, from:gh-r, file:"fzf", frozen:1
 #    zplug "peco/peco",         as:command, from:gh-r, file:"fzf", at:v0.3.5
