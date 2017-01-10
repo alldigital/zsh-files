@@ -53,7 +53,7 @@ zsh_zplug() {
     # Set priority to load command like a nice command
     # # e.g., zsh-syntax-highlighting must be loaded
     # # after executing compinit command and sourcing other plugins
-    zplug "zsh-users/zsh-syntax-highlighting", nice:10
+    zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 
     if ! zplug check --verbose; then
