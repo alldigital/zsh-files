@@ -34,7 +34,7 @@ zsh_zplug() {
 
     # node.js nvm
     zplug "lukechilds/zsh-nvm"
-    zplug "lukechilds/zsh-better-npm-completion", nice:10
+    zplug "lukechilds/zsh-better-npm-completion", defer:2
 
     # Other plugins of interest
 #    zplug "junegunn/fzf-bin",  as:command, from:gh-r, file:"fzf", frozen:1
