@@ -34,6 +34,9 @@ alias rm='rm -i'
 # derp derp
 alias mkdirp='mkdir -p'
 
+# Kill
+alias zk="kill -9 %1"
+
 # Alias Git, moved most other aliases to ~/.gitconfig
 # For some reason, Git doesn't like capitalized aliases. Some must remain.
 alias g='git'
