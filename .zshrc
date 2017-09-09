@@ -8,6 +8,10 @@ export LC_ALL=en_US.UTF-8
 export EDITOR=vim
 export VISUAL=vim
 
+# Add rust completions
+
+fpath+=~/.local/share/zsh-completions
+
 eval "$(fasd --init auto)"
 
 zsh_zplug() {
