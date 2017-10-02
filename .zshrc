@@ -1,13 +1,3 @@
-# Let's start with some sensible defaults
-# Ensure languages are set
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
-# Ensure editor is set
-export EDITOR=vim
-export VISUAL=vim
-
 # Add rust completions
 
 fpath+=~/.local/share/zsh-completions
@@ -79,7 +69,7 @@ zsh_startup() {
     zsh_zplug
 
     # Display Zsh version and display number
-#    echo -e "\n$fg_bold[cyan]This is ZSH $fg_bold[red]${ZSH_VERSION}$fg_bold[cyan] - DISPLAY on $fg_bold[red]$DISPLAY$reset_color\n"
+    # echo -e "\n$fg_bold[cyan]This is ZSH $fg_bold[red]${ZSH_VERSION}$fg_bold[cyan] - DISPLAY on $fg_bold[red]$DISPLAY$reset_color\n"
 }
 
 if zsh_startup; then
