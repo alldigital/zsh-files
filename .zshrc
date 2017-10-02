@@ -133,3 +133,6 @@ if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline
 	promptinit
 	export PROMPT='[%*]%(?..%B{%v}%b)%n%(2v.%B@%b.@)%m:%B%~%b%(!.#.>) '
 fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
