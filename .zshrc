@@ -27,7 +27,7 @@ zsh_zplug() {
     zplug "b4b4r07/http_code", as:command, use:bin
 
     # node.js nvm
-    zplug "lukechilds/zsh-nvm"
+    # zplug "lukechilds/zsh-nvm"
     zplug "lukechilds/zsh-better-npm-completion", defer:2
 
     # Other plugins of interest
