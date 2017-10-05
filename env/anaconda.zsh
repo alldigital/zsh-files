@@ -1,3 +1,3 @@
 # Anaconda python env settings
 
-export PATH="/home/ed/anaconda3/bin:$PATH"
+export PATH="$HOME/anaconda3/bin:$PATH"
