@@ -15,8 +15,8 @@ export LANGUAGE=en_US.UTF-8
 # export LC_ALL=en_US.UTF-8
 
 # Ensure editor is set
-export EDITOR='emacsclient -nc -a gvim'
-export VISUAL='emacsclient -nc -a gvim'
+export EDITOR='emacsclient -nc -a vim'
+export VISUAL='emacsclient -nc -a vim'
 
 # Set browser
 
