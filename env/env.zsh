@@ -15,10 +15,14 @@ export LANGUAGE=en_US.UTF-8
 # export LC_ALL=en_US.UTF-8
 
 # Ensure editor is set
-export EDITOR='emacsclient -nc'
+export EDITOR='emacsclient -c'
 export ALTERNATE_EDITOR=vim
-export VISUAL='emacsclient -nc'
+export VISUAL='emacsclient -c'
 
 # Set browser
 
-export BROWSER=google-chrome-stable
+if [ $OS = 'Linux' ]; then
+    export BROWSER=google-chrome-stable
+elif [ $OS = 'FreeBSD' ]; then
+    export BROWSER=firefox
+fi
