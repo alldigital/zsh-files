@@ -2,6 +2,10 @@
 # Aliases for all Computers
 #
 
+git_branch() {
+    (command git symbolic-ref -q HEAD || command git name-rev --name-only --no-undefined --always HEAD) 2>/dev/null
+}
+
 # Builtin aliases
 alias ll='ls -l'
 alias la='ls -a'
@@ -40,8 +44,25 @@ alias zk="kill -9 %1"
 # Alias Git, moved most other aliases to ~/.gitconfig
 # For some reason, Git doesn't like capitalized aliases. Some must remain.
 alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch'
+alias gc='git commit -v'
+alias gca='git commit -a -v'
+alias gcb='git checkout -b'
+alias gcm='git checkout master'
+alias gco='git checkout'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git pull origin $(git_branch)'
+alias glg='git log'
+alias gm='git merge'
+alias gmm='git merge master'
+alias gmv='git mv'
 alias gp='git pull'
-alias gP='git push'
+alias gP='git push origin $(git_branch)'
+alias grm='git rm'
+alias gst='git status'
 
 # Misc Aliases
 if [ $OS = 'Linux' ]; then
@@ -61,7 +82,7 @@ elif [ $OS = 'FreeBSD' ]; then
     alias pbcopy='xclip -selection clipboard'
     alias pbpaste='xclip -selection clipboard -o'
 
-    export GREP_OPTIONS="--color=auto --exclude-dir=${GREP_EXCLUDE_DIR}"
+    export GREP_OPTIONS="--color=auto --exclude=${GREP_EXCLUDE_DIR}"
 
     alias ls='ls -G'
     alias open='xdg-open'
@@ -114,3 +135,6 @@ alias o='a -e xdg-open' # quick opening files with xdg-open
 alias e='emacsclient -nc'
 alias emg='emacsclient -nc'
 alias emt='TERM=screen emacsclient -t'
+
+# Sudo
+alias _='sudo'
