@@ -124,7 +124,6 @@ alias tkss='tmux kill-session -t'
 #
 
 alias bdate='date +%Y%m%d_%H%M%S'
-alias pack='packer --noconfirm --noedit'
 
 # fasd aliases
 alias v='f -e vim' # quick opening files with vim
@@ -132,9 +131,9 @@ alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
 # EMACS aliases
-alias e='emacsclient -nc'
+alias e='emacsclient -a vim -nc'
 alias emg='emacsclient -nc'
-alias emt='TERM=screen emacsclient -t'
+alias emt='TERM=screen-256color emacsclient -t'
 
 # Sudo
 alias _='sudo'
