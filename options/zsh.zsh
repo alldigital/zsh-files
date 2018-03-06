@@ -1,12 +1,8 @@
 # Hisory handling
 
-GREP_EXCLUDE_DIR="{.git,.sass-cache,artwork,node_modules,vendor}"
-OS=`uname`
-
 export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=$HISTSIZE
-export CLICOLOR=1
 
 # Appends every command to the history file once it is executed
 setopt inc_append_history
@@ -28,3 +24,8 @@ setopt share_history
 
 # Audo cd without cd
 setopt autocd
+
+setopt auto_menu
+setopt hist_ignore_dups
+setopt hist_verify
+setopt interactivecomments

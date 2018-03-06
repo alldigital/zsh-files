@@ -1,8 +1,9 @@
 SCRIPT=$(readlink -f "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
+OS=$(uname)
 
 # guix should be the last in sourced dirs
-dirs=(aliases colors env options path functions themes guix)
+dirs=(options aliases colors env path functions themes guix)
 
 for dir in $dirs
 do

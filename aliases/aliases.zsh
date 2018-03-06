@@ -44,7 +44,28 @@ alias gp='git pull'
 alias gP='git push'
 
 # Misc Aliases
-alias ls='ls --color=auto'
+if [ $OS = 'Linux' ]; then
+    alias pbcopy='xclip -selection clipboard'
+    alias pbpaste='xclip -selection clipboard -o'
+
+    GREP_FLAGS=" --color=auto --exclude-dir=${GREP_EXCLUDE_DIR}"
+
+    alias ls='ls --color=auto'
+    alias open='xdg-open'
+
+    alias grep="grep ${GREP_FLAGS}"
+    alias egrep="egrep ${GREP_FLAGS}"
+    alias fgrep="fgrep ${GREP_FLAGS}"
+
+elif [ $OS = 'FreeBSD' ]; then
+    alias pbcopy='xclip -selection clipboard'
+    alias pbpaste='xclip -selection clipboard -o'
+
+    export GREP_OPTIONS="--color=auto --exclude-dir=${GREP_EXCLUDE_DIR}"
+
+    alias ls='ls -G'
+    alias open='xdg-open'
+fi
 
 # MVim == GVim on Linux
 alias mvim='gvim'
