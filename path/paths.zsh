@@ -6,7 +6,7 @@
 export PATH=$PATH:$HOME/bin
 
 # Add standard paths just in case
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
+# export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 # IDE
 # export PATH=$PATH:$HOME/netbeans/bin
