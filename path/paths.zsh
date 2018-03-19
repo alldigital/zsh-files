@@ -6,7 +6,7 @@
 export PATH=$PATH:$HOME/bin
 
 # Add standard paths just in case
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 # IDE
 # export PATH=$PATH:$HOME/netbeans/bin
@@ -14,5 +14,3 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # export PATH=$PATH:/data/tmcbeans/bin
 # export PATH=$PATH:$HOME/dev/android-studio/bin
 # export PATH=$PATH:$HOME/eclipse
-
-export PATH=$PATH:$HOME/.rvm/bin
