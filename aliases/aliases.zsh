@@ -7,7 +7,7 @@ git_branch() {
 }
 
 # Builtin aliases
-alias ll='ls -l'
+alias ll='ls -FGlAhp'
 alias la='ls -a'
 alias lla='ls -al'
 
@@ -40,6 +40,9 @@ alias mkdirp='mkdir -p'
 
 # Kill
 alias zk="kill -9 %1"
+
+# du -s sorted
+dusk='du -sh * | sort -h'
 
 # Alias Git, moved most other aliases to ~/.gitconfig
 # For some reason, Git doesn't like capitalized aliases. Some must remain.
