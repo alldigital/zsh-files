@@ -42,7 +42,7 @@ alias mkdirp='mkdir -p'
 alias zk="kill -9 %1"
 
 # du -s sorted
-dusk='du -sh * | sort -h'
+alias dusk='du -sh * | sort -h'
 
 # Alias Git, moved most other aliases to ~/.gitconfig
 # For some reason, Git doesn't like capitalized aliases. Some must remain.
