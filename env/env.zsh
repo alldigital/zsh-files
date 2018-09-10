@@ -15,9 +15,15 @@ export LANGUAGE=en_US.UTF-8
 # export LC_ALL=en_US.UTF-8
 
 # Ensure editor is set
-export EDITOR='emacsclient -a vim -c'
-export ALTERNATE_EDITOR=vim
-export VISUAL='emacsclient -a vim -c'
+if [ -e /usr/local/bin/vim ] || [ -e /usr/bin/vim ] ; then
+    export EDITOR=vim
+    export ALTERNATE_EDITOR=vim
+    export VISUAL=vim
+else
+    export EDITOR=vi
+    export ALTERNATE_EDITOR=vi
+    export VISUAL=vi
+fi
 
 # Set browser
 
