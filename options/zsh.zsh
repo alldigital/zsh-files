@@ -51,9 +51,9 @@ green_prompt=$'%{\e[0;32m%}'
 # yellow=$'%{\e[1;33m%}'
 # light_blue=$'%{\e[1;34m%}'
 # pink=$'%{\e[1;35m%}'
-# light_cyan=$'%{\e[1;36m%}'
+light_cyan_prompt=$'%{\e[1;36m%}'
 # white=$'%{\e[1;37m%}'
-reset_color=$'%{\e[0m%}'
+reset_color_prompt=$'%{\e[0m%}'
 
 
-PROMPT='${green_prompt}%n@%m${reset_color}>%~ %(!.#.λ) '
+PROMPT='${light_cyan_prompt}%n@%m${reset_color_prompt}>%~ %(!.#.λ) '
